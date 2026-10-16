@@ -1,0 +1,114 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f3f6;
+    color: black;
+}
+
+header {
+    background: #dce6f7;
+    text-align: center;
+    padding: 22px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+.card {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #cccccc;
+}
+
+.hidden {
+    display: none;
+}
+
+#options {
+    margin: 20px 0;
+}
+
+.option {
+    display: block;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #bbbbbb;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #edf2fb;
+}
+
+.option input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+button {
+    padding: 11px 16px;
+    margin: 6px 5px 6px 0;
+    background: #cbdaf5;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #a9c3ed;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 16px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+label {
+    display: block;
+    color: black;
+}
+
+#score {
+    font-size: 26px;
+}
+
+#error {
+    color: #b00020;
+}
+
+@media (max-width: 700px) {
+    .card {
+        margin: 18px 12px;
+        padding: 20px;
+    }
+
+    button {
+        margin-top: 8px;
+    }
+}

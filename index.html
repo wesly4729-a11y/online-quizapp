@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Online Quiz Website</h1>
+    <p>Test your knowledge with 10 questions</p>
+</header>
+
+<main>
+    <section id="home" class="card">
+        <h2>Welcome Student!</h2>
+        <p>Answer all 10 questions and check your score.</p>
+        <button id="startBtn">Start Quiz</button>
+    </section>
+
+    <section id="quiz" class="card hidden">
+        <h2>General Knowledge Quiz</h2>
+        <p id="progress"></p>
+        <h3 id="question"></h3>
+        <div id="options"></div>
+
+        <div class="buttons">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+            <button id="finishBtn" class="hidden">Finish Quiz</button>
+        </div>
+    </section>
+
+    <section id="result" class="card hidden">
+        <h2>Quiz Completed!</h2>
+        <h3 id="score"></h3>
+        <p id="percentage"></p>
+        <p id="message"></p>
+        <button id="loginBtn">Login to Save Result</button>
+        <button id="retryBtn">Try Again</button>
+    </section>
+
+    <section id="login" class="card hidden">
+        <h2>Student Login / Registration</h2>
+
+        <label for="name">Student Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Minimum 6 characters">
+
+        <button id="registerBtn">Register & Save</button>
+        <button id="loginSubmitBtn">Login & Save</button>
+        <button id="backBtn">Back</button>
+
+        <p id="error"></p>
+    </section>
+
+    <section id="dashboard" class="card hidden">
+        <h2>Student Dashboard</h2>
+        <p id="welcome"></p>
+        <h3>Saved Quiz Results</h3>
+        <div id="history"></div>
+        <button id="logoutBtn">Logout</button>
+        <button id="againBtn">Take Quiz Again</button>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
